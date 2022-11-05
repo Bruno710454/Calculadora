@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="h">% c a l c u l a d o r a +</h1>
+    </header>
+    <div class="all">
+        <div>
+            <picture>
+                <source media="(max-width:360px )" srcset="P_mathematics_blue200.png">
+                <img src="P_mathematics_blue300.png" alt="">
+            </picture>
+        </div>
+        <div class="math">
+            <div id="res"></div>
+            <div>
+                <button id="btn" onclick="calcular('7')">7</button>
+                <button id="btn" onclick="calcular('8')">8</button>
+                <button id="btn" onclick="calcular('9')">9</button>
+                <button id="btn" onclick="calcular('*')">x</button>
+            </div>
+            <div>
+                <input type="button" value="4" id="btn" onclick="calcular('4')">
+                <input type="button" value="5" id="btn" onclick="calcular('5')">
+                <input type="button" value="6" id="btn" onclick="calcular('6')">
+                <input type="button" value="-" id="btn" onclick="calcular('-')">
+            </div>
+            <div>
+                <input type="button" value="1" id="btn" onclick="calcular('1')">
+                <input type="button" value="2" id="btn" onclick="calcular('2')">
+                <input type="button" value="3" id="btn" onclick="calcular('3')">
+                <button id="btn" onclick="calcular('+')">+</button>
+            </div>
+            <div>
+                <input type="button" value="C" id="btn" onclick="limpar()">
+                <input type="button" value="0" id="btn" onclick="calcular('0')">
+                <input type="button" value="," id="btn" onclick="calcular('.')">
+                <button id="btn" style = 'background-color:#185ABD;' onclick="ca()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1 id="teste">Criado por Bruno Mikael</h1>
+    </footer>
+    <script>
+        function calcular (x){
+            var numero = document.getElementById ('res')
+            numero.innerHTML+=x     
+    
+        }
+
+        function limpar(){
+            var numero = document.getElementById('res')
+            numero.innerHTML=''
+        }
+        
+        function ca(){
+            var cal = document.querySelector('#res').innerHTML
+            var r = document.getElementById('res')
+            var resultado = eval(cal)
+            r.innerHTML=resultado
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gemunu+Libre:wght@200&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,100;1,100&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.math {
+    box-shadow: 15px 15px 15px 15px #ccc;
+    padding: 30px;
+    width: 280px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(112, 110, 110);
+    font-weight: bolder;
+}
+
+#btn {
+    padding: 20px;
+    width: 50px;
+    background-color: white;
+    outline-color: white;
+    border-color: white;
+    border-radius: 5px;
+    color: rgb(150, 145, 145);
+}
+
+#btn:hover {
+    box-shadow: 5px 5px 5px 5px #b6c3d8;
+}
+
+#res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 215px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-image:linear-gradient(to top, rgb(238, 238, 238), white )
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    box-shadow: 5px 5px 5px #ccc;
+    color:white;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    background-color: #185ABD;
+}
+
+.tudo {
+    display: flex;
+    text-align: center;
+}
+.all {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+
+footer {
+    height: 40px;
+    box-shadow: 10px 10px 10px 15px  #ccc;
+    background-color: #185ABD;
+    color:white;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:680px){
+    .all {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    header {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:340px){
+    header {
+        font-size: 10px;
+    }
+}
